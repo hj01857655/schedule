@@ -32,7 +32,7 @@ class RequestManager {
   Dio getDio() {
     if (_dio == null) {
       _dio ??= Dio(BaseOptions(
-        baseUrl: "https://oa.csmu.edu.cn:8099/jsxsd",
+        baseUrl: "http://oa.csmu.edu.cn:8099/jsxsd",
       ));
       _dio?.interceptors.add(DioCacheInterceptor(options: cacheOptions));
     }
